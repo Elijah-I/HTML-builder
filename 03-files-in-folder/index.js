@@ -19,7 +19,7 @@ fs.readdir(dir, (_, files) => {
       }
 
       // get file size
-      const size = stats.size / 1000
+      const size = stats.size / 1024
 
       // out formatted file info
       stdout.write(`${info.name} - ${info.ext.replace(".", "")} - ${size}kb\n`)
